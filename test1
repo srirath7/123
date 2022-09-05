@@ -1,3 +1,4 @@
+#OTP
 import random
 print(random.randint(101012, 990982))
 answer1 = input('(resend/stop): ')
