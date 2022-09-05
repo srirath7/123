@@ -1,0 +1,13 @@
+import random
+print(random.randint(101012, 990982))
+answer1 = input('(resend/stop): ')
+while ' ' :
+    if answer1 =='resend':
+        print(random.randint(101012, 990982))
+        answer1 = input('(resend/stop): ')
+    elif answer1 == 'stop' :
+        print('See you!, Have a great day.')
+        break
+    else:
+        print('error')
+        answer1 = input('(resend/stop): ')
