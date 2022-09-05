@@ -13,3 +13,4 @@ while ' ' :
         print('error')
         answer1 = input('(resend/stop): ')
 #casual updates BETTER TO MAKE
+#123 closed with Poll SCM
