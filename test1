@@ -12,4 +12,4 @@ while ' ' :
     else:
         print('error')
         answer1 = input('(resend/stop): ')
-#casual updates
+#casual updates BETTER TO MAKE
