@@ -1,19 +1,24 @@
-pipeline {
+Jenkinsfile (Declarative Pipeline)
+pipeline { 
     agent any 
+    options {
+        skipStagesAfterUnstable()
+    }
     stages {
         stage('Build') { 
-            steps {
-                // 
+            steps { 
+                sh 'make' 
             }
         }
-        stage('Test') { 
+        stage('Test'){
             steps {
-                // 
+                sh 'make check'
+                junit 'reports/**/*.xml' 
             }
         }
-        stage('Deploy') { 
+        stage('Deploy') {
             steps {
-                // 
+                sh 'make publish'
             }
         }
     }
